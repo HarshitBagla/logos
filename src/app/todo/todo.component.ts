@@ -34,7 +34,10 @@ export class TodoComponent implements OnInit {
     onAdd(todoTask): void {
       this.todoService.addTodos(todoTask.value);
       todoTask.value = null;
-    
-  }
+    }
+
+    changeComplete($key:string, is_completed) {
+      this.todoService.checkTodos($key, !is_completed);
+    }
 
 }
