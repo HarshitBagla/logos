@@ -7,10 +7,12 @@ import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TodoComponent
   ],
   imports: [
     BrowserModule,
