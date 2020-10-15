@@ -40,4 +40,8 @@ export class TodoComponent implements OnInit {
       this.todoService.checkTodos($key, !is_completed);
     }
 
+    onDelete($key:string) {
+      this.todoService.removeTodos($key);
+    }
+
 }
