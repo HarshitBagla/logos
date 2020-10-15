@@ -4,7 +4,7 @@
 
 <div class="input-group">
     <input type="text" class="form-control" #todoTask>
-    <div class="input-group-addon hover-cursor">
+    <div class="input-group-addon hover-cursor" (click) = 'onAdd(todoTask)'>
         <i class="fa fa-plus-circle fa-2x"></i>
     </div>
 </div>
