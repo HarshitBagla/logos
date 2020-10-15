@@ -8,3 +8,17 @@
         <i class="fa fa-plus-circle fa-2x"></i>
     </div>
 </div>
+
+<div style="margin: 5px 0px">
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor="let todo of todos">
+            <span class="hover-cursor" [class.text-success]="todo.is_completed">
+                <i class="fa fa-lg" [ngClass]="todo.is_completed?'fa-check-circle-o':'fa-circle-thin'"></i>
+            </span>
+            {{ todo.task }}
+            <span class="hover-cursor text-danger pull-right">
+                <i class="fa fa-trash-o fa-lg"></i>
+            </span>
+        </li>
+    </ul>
+</div>
